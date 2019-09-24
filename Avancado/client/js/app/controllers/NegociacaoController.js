@@ -7,7 +7,9 @@ class NegociacaoController {
         this._inputData = $('#data');
         this._inputQuantidade = $('#quantidade');
         this._listanegociacoes = new ListaNegociacoes();
+        this._negociacoesView = new NegociacoesView($('#NegociacoesView'));
 
+        this._negociacoesView.update();
     }
 
     adiciona(event) {
